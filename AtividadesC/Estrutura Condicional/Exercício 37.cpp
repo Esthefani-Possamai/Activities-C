@@ -5,27 +5,54 @@
 main()
 {
 	setlocale (LC_ALL, "Portuguese_Brazil");
-	float NUM;
-	char LETRA;
-	printf ("Informe um número: ");
-	scanf ("%f", &NUM);
-	printf ("\n------- MENU DE OPÇÕES -------");
-	printf ("\na. Arredondamento para baixo \nb. Arredondamento para cima \nc. Logaritmo natural \nd. Logaritmo de base 10 \ne. Valor absoluto \nf. Parte inteira \ng. Parte decimal \nh. Quadrado \ni. Raiz quadrada");
-	fflush (stdin);
-	printf ("\nDigite a opção desejada: ");
-	scanf ("%c", &LETRA);
+	int OPCAO;
+	float SAL;
+	printf ("Olï¿½! O que vocï¿½ deseja saber? \nMenu de opcï¿½es\n1. Imposto.\n2. Novo salï¿½rio. \n3. Classificaï¿½ï¿½o.");
+	printf ("\nDigite a opï¿½ï¿½o desejada: ");
+	scanf ("%d", &OPCAO);
 	
-	switch (LETRA)
-	{
-		case 'a': printf ("\nO arredondamento para baixo do número %.2f é %.2f.", NUM, floor(NUM)); break;
-		case 'b': printf ("\nO arredondamento para cima do número %.2f é %.2f.", NUM, ceil(NUM)); break;
-		case 'c': printf ("\nO logaritmo natural do número %.2f é %.2f.", NUM, log(NUM)); break;
-		case 'd': printf ("\nO logaritmo de base 10 do número %.2f é %.2f.", NUM, log10 (NUM)); break;
-		case 'e': printf ("\nO valor absoluto do número %.2f é %.2f.", NUM, fabs(NUM)); break;
-		case 'f': printf ("\nA parte inteira do número %.2f é %.2d.", NUM, (int)NUM); break;
-		case 'g': printf ("\nA parte decimal do número %.2f é %.2f.", NUM, NUM-((int)NUM)); break;
-		case 'i': printf ("\nA raíz quadrada do número %.2f é %.2f.", NUM, sqrt(NUM)); break;
-		case 'h': printf ("\nO quadrado do número %.2f é %.2f.", NUM, pow (NUM, 2)); break;
-		default: printf ("Informações inválidas.");
-	}
+	if (OPCAO > 3 || OPCAO <= 0 )
+	printf ("Informaï¿½ï¿½o invï¿½lida.");
+			else {
+					printf ("\nInforme seu salï¿½rio: R$ ");
+					scanf ("%f", &SAL);
+					
+					switch (OPCAO)
+					{
+						case 1: 
+						{
+							if (SAL < 1000)
+							printf ("O valor do imposto: R$ %.2f (5%%).", 0.05 * SAL);
+								else if (SAL <= 2500)
+								printf ("O valor do imposto: R$ %.2f (10%%).", 0.10 * SAL);
+									else
+									printf ("O valor do imposto: R$ %.2f (15%%).", 0.15 * SAL);	
+						break;	
+						}
+						
+						case 2:
+						{
+							if (SAL > 3000)
+							printf ("O valor do novo salï¿½rio serï¿½ de: R$ %.2f (Acrï¿½scimo de R$25,00).", SAL + 25);	
+								else if (SAL > 2000)
+								printf ("O valor do novo salï¿½rio serï¿½ de: R$ %.2f (Acrï¿½scimo de R$50,00).", SAL + 50);
+									else if (SAL >= 1000)
+									printf ("O valor do novo salï¿½rio serï¿½ de: R$ %.2f (Acrï¿½scimo de R$75,00).", SAL + 75);
+										else
+										printf ("O valor do novo salï¿½rio serï¿½ de: R$ %.2f (Acrï¿½scimo de R$100,00).", SAL + 100);
+						break;
+						}
+						
+						case 3:
+						{
+							if (SAL >= 700)
+							printf ("Sua classificaï¿½ï¿½o: mal remunerado.");
+								else
+								printf ("Sua classificaï¿½ï¿½o: bem remunerado.");	
+						break;	
+						}
+						
+						default: printf ("Informaï¿½ï¿½o invï¿½lida.");
+					}
+				}
 }

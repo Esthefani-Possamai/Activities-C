@@ -1,49 +1,34 @@
 #include <stdio.h>
 #include <locale.h>
 
+//Elabore um algoritmo que receba o código correspondente ao cargo de um funcionário, seu 
+//salário atual, e imprima o cargo, o valor do aumento e o novo salário do funcionário. Os 
+//cargos estão na tabela a seguir.
+//Código Cargo Percentual
+//1 Escriturário 50%
+//2 Secretário 35%
+//3 Caixa 20%
+//4 Gerente 10%
+//5 Diretor Não tem aumento
+
 main()
 {
 	setlocale (LC_ALL, "Portuguese_Brazil");
-	char NOME[40], SX;
-	int IDADE, P1, P2;
+	int COD;
+	float SAL;
 	
-	printf ("Informe seu nome: ");
-	gets (NOME);
-	printf ("Informe seu sexo (F/M): ");
-	scanf ("%c", &SX);
-	printf ("Informe a sua idade: ");
-	scanf ("%d", &IDADE);
-	printf ("A seguir lhe faremos duas perguntas.");
-	printf ("\n---------------------");
-	printf ("\nO que você achou do filme? \n1. Ótimo. \n2. Bom. \n3. Regular. \n4. Ruim. \n5. Péssimo.");
-	printf ("\nDigite o número correspondene a sua opnião: ");
-	scanf ("%d", &P1);
-	printf ("---------------------");
-	printf ("\nVocê assistiria a uma terceira continuaçãose houvesse o Deadpool 3? \n1. Sim. \n2. Não. \n3. Talvez.");
-	printf ("\nDigite o número correspondene a sua opnião: ");
-	scanf ("%d", &P2);
-	printf ("---------------------");
+	printf ("Olá! Informe o código correspondente ao seu cargo: ");
+	scanf ("%d", &COD);
+	printf ("Informe seu salário atual: R$ ");
+	scanf ("%f", &SAL);
 	
-	printf ("\nDados obtidos: \nNome: %s. \nIdade: %d. \nSexo: %c.", NOME, IDADE, SX);
-	
-	switch (P1)
+	switch (COD)
 	{
-		case 1: printf ("\nO que você achou do filme? Ótimo."); break;
-		case 2: printf ("\nO que você achou do filme? Bom."); break;
-		case 3: printf ("\nO que você achou do filme? Regular."); break;
-		case 4: printf ("\nO que você achou do filme? Ruim."); break;
-		case 5: printf ("\nO que você achou do filme? Péssimo."); break;
-		default: printf ("\nO que você achou do filme? Não declarou opnião.");
+		case 1: printf ("Cargo: Escrituário. \nValor do aumento: R$%.2f. \nNovo salário: R$%.2f.", SAL * 0.5, SAL + (SAL*0.5)); break;
+		case 2: printf ("Cargo: Secretário. \nValor do aumento: R$%.2f. \nNovo salário: R$%.2f.", SAL * 0.35, SAL + (SAL*0.35)); break;
+		case 3: printf ("Cargo: Caixa. \nValor do aumento: R$%.2f. \nNovo salário: R$%.2f.", SAL * 0.2, SAL + (SAL*0.2)); break;
+		case 4: printf ("Cargo: Gerente. \nValor do aumento: R$%.2f. \nNovo salário: R$%.2f.", SAL * 0.1, SAL + (SAL*0.1)); break;
+		case 5: printf ("Cargo: Diretor. \nValor do aumento: R$%.2f. \nNovo salário: R$%.2f.", SAL * 0, SAL); break;
+		default: printf ("Dado inválido!");
 	}	
-	
-	switch (P2)
-	{
-		case 1: printf ("\nVocê assistiria a uma terceira continuaçãose houvesse o Deadpool 3? Sim."); break;
-		case 2: printf ("\nVocê assistiria a uma terceira continuaçãose houvesse o Deadpool 3? Não."); break;
-		case 3: printf ("\nVocê assistiria a uma terceira continuaçãose houvesse o Deadpool 3? Talvez."); break;
-		default: printf ("\nVocê assistiria a uma terceira continuaçãose houvesse o Deadpool 3? Não declarou opnião.");
-	}
-	
-	printf ("\n\nObrigada por realizar a pesquisa!");
-	
-	}
+}

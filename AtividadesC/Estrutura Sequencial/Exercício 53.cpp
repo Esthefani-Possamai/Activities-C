@@ -7,10 +7,10 @@ main()
 	float HDEGRAU, HESCADAM, QDEGRAUS;
 	printf ("Informe a altura de cada degrau: ");
 	scanf ("%f", &HDEGRAU);
-	printf ("Informe a altura que deseja alcançar subindo a escada: ");
+	printf ("Informe a altura que deseja alcanï¿½ar subindo a escada: ");
 	scanf ("%f", &HESCADAM);
 	
 	QDEGRAUS = HESCADAM / HDEGRAU;
 	
-	printf ("Usuário, você deverá subir %.1f degraus!", QDEGRAUS);
+	printf ("Usuï¿½rio, vocï¿½ deverï¿½ subir %.1f degraus!", QDEGRAUS);
 }

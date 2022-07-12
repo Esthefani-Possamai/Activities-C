@@ -6,13 +6,13 @@ main()
 	setlocale (LC_ALL, "Portuguese_Brazil");
 	float PESO, PGRAMA, QRACAO, RACAO5DIA, RACAOREST;
 	
-	printf ("Informe o peso do saco de ração (kg): ");
+	printf ("Informe o peso do saco de raï¿½ï¿½o (kg): ");
 	scanf ("%f", &PESO);
-	printf ("Informe a quantidade de ração fornecida para cada gato (g): ");
+	printf ("Informe a quantidade de raï¿½ï¿½o fornecida para cada gato (g): ");
 	scanf ("%f", &QRACAO);
 	PGRAMA = PESO * 1000;
 	RACAO5DIA = (QRACAO * 2) * 5; 
 	RACAOREST = PGRAMA - RACAO5DIA; 
 	
-	printf ("Após 5 dias, restará %.2f gramas de ração no saco adquirido.", RACAOREST);
+	printf ("Apï¿½s 5 dias, restarï¿½ %.2f gramas de raï¿½ï¿½o no saco adquirido.", RACAOREST);
 }
