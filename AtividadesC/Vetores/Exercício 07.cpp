@@ -9,13 +9,13 @@ main()
 	
 	for (i=1; i<=5; i++)
 	{
-		printf ("%d. Informe um nï¿½mero: ", i);
+		printf ("%d. Informe um número: ", i);
 		scanf ("%f", &A[i]);
 		
 		if (A[i] < 0)
 		{
 			NEG = A[i];
-			INEG = i; break; //o break faz com que eu saia do laï¿½o no primeiro nï¿½mero negtivo que aparecer
+			INEG = i; break; //o break faz com que eu saia do laço no primeiro número negtivo que aparecer
 		}
 		else if (A[i] >= 0)
 		{
@@ -25,10 +25,10 @@ main()
 	
 	if(cont==5)
 	{
-		printf ("Negativo nï¿½o encontrado..");
+		printf ("Negativo não encontrado.");
 	}
 	else 
 	{
-		printf ("O ï¿½ndice do primeiro nï¿½mero negativo encontrado foi: %d.", INEG);
+		printf ("O índice do primeiro número negativo encontrado foi: %d.", INEG);
 	}
 }
