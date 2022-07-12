@@ -16,7 +16,7 @@
 <div>
   <p><i>📌 Acesse o enunciado das questões:</i></p>
   <ul>
-  <li><a href="#">Lista de exercícios - Estrutura Sequencial e Condicional;</a></li>
+  <li><a href="https://drive.google.com/file/d/1kMThebuVn9gAnVwIPDD2mWq19lg3p4hf/view?usp=sharing">Lista de exercícios - Estrutura Sequencial e Condicional;</a></li>
   <li><a href="#">Lista de exercícios - Estrutura de Repetição;</a></li>
   <li><a href="#">Lista de exercícios - Vetores.</a></li>
 </div>
