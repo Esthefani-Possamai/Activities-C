@@ -7,7 +7,8 @@
   <br/ >
   <i>📌 Conteúdos abordados:</i>
 <ul>
-  <li>Estrutura Sequencial e Condicional;</li>
+  <li>Estrutura Sequencial;</li>
+    <li>Estrutura Condicional;</li>
   <li>Estrutura de Repetição;</li>
   <li>Vetores.</li>
 </ul>
@@ -16,7 +17,8 @@
 <div>
   <p><i>📌 Acesse o enunciado das questões:</i></p>
   <ul>
-  <li><a href="https://drive.google.com/file/d/1kMThebuVn9gAnVwIPDD2mWq19lg3p4hf/view?usp=sharing">Lista de exercícios - Estrutura Sequencial e Condicional;</a></li>
+  <li><a href="#">Lista de exercícios - Estrutura Sequencial;</a></li>
+  <li><a href="#">Lista de exercícios - Estrutura Condicional;</a></li>
   <li><a href="#">Lista de exercícios - Estrutura de Repetição;</a></li>
   <li><a href="#">Lista de exercícios - Vetores.</a></li>
 </div>

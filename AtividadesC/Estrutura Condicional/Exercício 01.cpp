@@ -6,16 +6,16 @@ main()
 	setlocale (LC_ALL, "Portuguese_Brazil");
 	float NUMERO, METADE;
 	
-	printf ("Informe um número: ");
+	printf ("Informe um nï¿½mero: ");
 	scanf ("%f", &NUMERO);
 	
 	if (NUMERO > 20)
 	{
 		METADE = NUMERO /2;
-		printf ("A metade do número informado é %.1f", METADE);
+		printf ("A metade do nï¿½mero informado ï¿½ %.2f", METADE);
 	}	
 	else
 	{
-		printf ("O número informado é menor que 20!");
+		printf ("O nï¿½mero informado ï¿½ menor que 20!");
 	}
 }
