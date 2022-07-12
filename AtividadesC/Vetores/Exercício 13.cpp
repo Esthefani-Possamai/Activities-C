@@ -4,22 +4,38 @@
 main()
 {
 	setlocale (LC_ALL, "Portuguese_Brazil");
-	int i;
-	float sal [5], nsal[5];
-	char nome [30][5];
+	int i, num[7];
 	
-	for (i=0; i<5; i++)
+	for (i=0; i<7; i++)
 	{
-		printf ("Informe seu nome: ");
-		scanf ("%s", &nome[i]);
-		printf ("Informe seu salário: ");
-		scanf ("%f", &sal[i]);
-		nsal[i] = (sal[i] * 0.08) + sal[i];
+		printf ("%d. Informe um número inteiro: ", i);
+		scanf ("%d", &num[i]);
 	}
-	printf ("\n\nListagem numerada dos resultados:\n");
-	for (i=0; i<5; i++)
+	
+	printf ("\nOs múltiplos de 2 são: \n");
+	for (i=0; i<7; i++)
 	{
-		printf ("Nome do funcionário: %s.\nNovo salário: R$ %.2f.\n\n", nome[i], nsal[i]);	
+		if (num[i]%2==0)
+		{
+			printf("\t%d...", num[i]);
+		}	
+	}
+	
+	printf ("\n\nOs múltiplos de 3 são: \n");
+	for (i=0; i<7; i++)
+	{
+		if (num[i]%3==0)
+		{
+			printf("\t%d...", num[i]);
+		}	
+	}
+	
+	printf ("\n\nOs múltiplos de 2 e 3 são: \n");
+	for (i=0; i<7; i++)
+	{
+		if (num[i]%3==0 || num[i]%2==0 )
+		{
+			printf("\t%d...", num[i]);
+		}	
 	}
 }
-	
