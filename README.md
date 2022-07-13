@@ -17,10 +17,10 @@
 <div>
   <p><i>📌 Acesse o enunciado das questões:</i></p>
   <ul>
-  <li><a href="#">Lista de exercícios - Estrutura Sequencial;</a></li>
-  <li><a href="#">Lista de exercícios - Estrutura Condicional;</a></li>
-  <li><a href="#">Lista de exercícios - Estrutura de Repetição;</a></li>
-  <li><a href="#">Lista de exercícios - Vetores.</a></li>
+  <li><a href="https://drive.google.com/file/d/1NksE3-5KxsI0dhymegg4b1hWuKGY3GrN/view?usp=sharing" target="_blank">Lista de exercícios - Estrutura Sequencial;</a></li>
+  <li><a href="https://drive.google.com/file/d/1o4j6Y49_BKbDAC6tyR6dECWPB4uO4I8A/view?usp=sharing" target="_blank">Lista de exercícios - Estrutura Condicional;</a></li>
+  <li><a href="https://drive.google.com/file/d/1MLSsiZ0H0gcMdI_1V9aetW33TP8NcaAp/view?usp=sharing" target="_blank">Lista de exercícios - Estrutura de Repetição;</a></li>
+  <li><a href="https://drive.google.com/file/d/1LgwrxA4tdEvoccCTZhboS6Hmwr7pZL_j/view?usp=sharing" target="_blank">Lista de exercícios - Vetores.</a></li>
 </div>
 
 ##
