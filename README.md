@@ -3,7 +3,9 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Inconsolata&size=30&color=B695C3&lines=Atividades+em+linguagem+C)](https://git.io/typing-svg)
 </div>
 <div>
-  <i>🔭 Este repositório conta com atividades de programação desenvolvidas em linguagem C!</i></div>
+  <i>🔭 Este repositório conta com mais de 110 atividades de programação desenvolvidas em linguagem </i>
+   <img align="center" alt="Esthef-C" height="45" width="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg">
+  </div>
   <br/ >
   <i>📌 Conteúdos abordados:</i>
 <ul>
