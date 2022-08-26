@@ -30,8 +30,4 @@
     <p><em>Contate-me pelo e-mail: </em></p>
     <a href = "mailto: esthefani_possamai@hotmail.com" target="_blank"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   </div>
-  <div align="center">
-   <footer>
-    <p>Esthéfani Possamai &copy; 2022</p>
-   </footer>
-   </div>
+
